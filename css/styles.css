@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&display=swap');
+
+/* zerar todos os estilos do navegador  */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  width: 100vw;
+  height: 100vh;
+  font-size: 62.5%;
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+
+}
+body{
+  background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20 ,1)), url('../img/ginastica.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-position-y: 0px;
+  background-repeat: no-repeat;
+}
+
+/* Menu header bar  */
+
+header{
+  width: 100%;
+  height: 10vh;
+  background: rgba(22,22,22,0.2);
+}
+.menu-content{
+  text-transform: uppercase;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.8rem;
+}
+.logo{
+  color: wheat;
+  font-size: 1.8rem;
+  letter-spacing: 0.4rem;
+  cursor: pointer;
+}
+.list-items{
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+
+}
+.list-items a {
+  text-decoration: none;
+  color: white;
+  padding: 1.5rem;
+  transition: 2ms easy-in;
+  position: relative;
+
+}
+.list-items a:hover{
+  color: rgb(251, 255, 0);
+}
+.list-items a:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(251, 255, 0);
+  transition: all 1s ease;
+
+}
+.list-items a:hover:before {
+  width: 85%;
+}
+main{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.primary_text{
+  width: 590px;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.second_text{
+  margin-bottom: 10rem;
+  font-size: 2rem;
+  color: rgb(165, 165, 165);
+  text-transform: uppercase;
+}
+.btns{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+.btns button{
+  width: 250px;
+  height: 60px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-weight: bold;
+  letter-spacing: .3rem;
+  position: relative;
+  transition: 1.5s;
+}
+.btns button:before{
+  content: '';
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 0;
+  height: 60px;
+  background-color: rgb(61, 90, 30);
+  z-index: -1;
+  transition: 1.5s;
+  border-radius: 20px;
+
+}
+.btns button:hover{
+  color: rgb(251, 255, 0);
+  border: none;
+}
+.btns button:hover:before{
+  width: 100%;
+}
+
